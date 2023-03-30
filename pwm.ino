@@ -12,8 +12,12 @@ void setup() {
 }
 
 void loop() {
-  for (int t_high = 0; t_high <= 10; t_high++) {
-    Timer1.setPwmDuty(LED, t_high * 100);
-    delay(100);
+  // for (int t_high = 0; t_high <= 10; t_high++) {
+  //   Timer1.setPwmDuty(LED, t_high * 100);
+  //   delay(100);
+  // }
+  for (int t_high = 0; t_high <= 1023; t_high++) {
+    Timer1.setPwmDuty(LED, t_high);
+    delay(1);
   }
 }
