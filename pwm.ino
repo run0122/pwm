@@ -20,4 +20,8 @@ void loop() {
     Timer1.setPwmDuty(LED, t_high);
     delay(1);
   }
+  for (int t_high = 1023; t_high >= 0; t_high--) {
+    Timer1.setPwmDuty(LED, t_high);
+    delay(1);
+  }
 }
